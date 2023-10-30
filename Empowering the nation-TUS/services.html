@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Purpose-Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <div class="logo-logo">
+                    <img src="media/logo.png">
+                </div>
+            </div>
+            <!--the logo for the website-->
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <!--this is the search bar in the navigation bar-->
+            <li>
+                <a href="index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <!--this is the home button in the navigation bar-->
+            <li>
+                <a href="about.html">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">About Us</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <!--this is the about button in the navigation bar-->
+            <li>
+                <a href="services.html">
+                    <i class='bx bxs-server'></i>
+                    <span class="links_name">Courses</span>
+                </a>
+                <span class="tooltip">Courses</span>
+            </li>
+            <!--this is the services button in the navigation bar-->
+            <li>
+                <a href="cart.html">
+                    <i class='bx bxs-cart-alt'></i>
+                    <span class="links_name">Cart</span>
+                </a>
+                <span class="tooltip">Cart</span>
+            </li>
+            <!--this is the news button in the navigation bar-->
+            <li>
+                <a href="contact.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contact Us</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+            <!--this is the contact button in the navigation bar3-->
+            <!--this is the donations button for the naivigation bar-->
+            <li>
+                <a href="form.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">Sign in</span>
+                </a>
+                <span class="tooltip">Sign in</span>
+            </li>
+            <!--this is the login form for the naviagtion bar-->
+        </ul>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector("bx-search")
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+        <!--html code for the navigation bar ends here-->
+
+<!--the services content start from here, the 6 differnt cards and icons -->
+    <div class="wrapper">
+        <h1>Courses</h1>
+        <p></p>
+        <div class="content-box">
+            <div class="card">
+                <i class=""></i>
+                <h2>First Aid</h2>
+                <p>
+                   first aid
+                </p>
+                <a href="">Readmore</a>
+            </div>
+            <div class="card">
+                <i class=""></i>
+                <h2>Sewing</h2>
+                <p>
+                   sewing
+                </p>
+                <a href="">Readmore</a>
+            </div>
+            <div class="card">
+                <i class="" ></i>
+                <h2>landscaping</h2>
+                <p>
+                   landscaping
+                </p>
+                <a href="">Readmore</a>
+            </div>
+            <div class="card">
+                <i class=""></i>
+                <h2>cooking</h2>
+                <p>
+                   cooking
+                </p>
+                <a href="">Readmore</a>
+            </div>
+            <div class="card">
+                <i class=""></i>
+                <h2>child minding</h2>
+                <p>
+                   child minding
+                </p>
+                <a href="">Readmore</a>
+            </div>
+            <div class="card">
+                <i class=""></i>
+                <h2>garden maintainance</h2>
+                <p>
+                   garden maintainance
+                </p>
+                <a href="">Readmore</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="media/logo.png">
+            <p>small parragraph hereeee
+            </p>
+            <div class="socials">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li>
+                <h2>Quick Links</h2>
+    
+                <ul class="box">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Courses</a></li>
+                    <li><a href="cart.html">Checkout</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </li>
+            <li class="features">
+               <h2>What we offer</h2>
+    
+               <ul class="box">
+                <li><a href="donations.html">3 Month courses</a></li>
+                <li><a href="donations.html">6 Month courses</a></li>
+                <li><a href="donations.html">Cart</a></li>
+                <li><a href="volunteer.html">Checkout</a></li>
+               </ul>
+            </li>
+            <li>
+               <h2>Contact</h2>
+    
+               <ul class="box">
+                <li><a href="contact.html">+27 68 347 0249</a></li>
+                <li><a href="contact.html">empoweringthenation@gmail.com</a></li>
+                <li><a href="contact.html">12 Radar Dr, Durban North, Durban, 4051</a></li>
+                <li><a href="contact.html">something</a></li>
+               </ul>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            <p>All rights reserved by &copy;Empowering The Nation 2023.</p>
+        </div>
+    </footer>
+</body>
+</html>
